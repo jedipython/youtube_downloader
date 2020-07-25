@@ -1,2 +1,8 @@
-BOT_TOKEN = "123" 
-admin_id = 123 
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BOT_TOKEN = os.getenv("TOKEN")
+admin_id = os.getenv("ADMIN_ID")
